@@ -30,27 +30,38 @@
             android:id="@+id/txtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"/>
+            android:inputType="textEmailAddress" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
 
-        <com.google.android.material.textfield.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insira sua senha"
+        app:endIconDrawable="@drawable/senha"
+        app:endIconMode="clear_text"
+        app:startIconContentDescription="senha">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Insira sua senha"
-            app:endIconDrawable="@drawable/senha"
-            app:endIconMode="clear_text"
-            app:startIconContentDescription="senha" >
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/txtSenha"
-                android:inputType="textPassword"/>
+            android:inputType="textPassword" />
 
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/BTNentrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:textColor="@color/black"
+        android:backgroundTint="#c5d1d4"
+        app:cornerRadius="0dp">
+
+    </com.google.android.material.button.MaterialButton>
 
 
 </LinearLayout>
