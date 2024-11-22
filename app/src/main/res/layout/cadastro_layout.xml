@@ -9,13 +9,13 @@
     android:orientation="vertical">
 
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/logib" />
+        android:src="@drawable/cad" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -34,28 +34,14 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Crie um nome de usuário"
-        app:endIconDrawable="@drawable/email"
-        app:endIconMode="clear_text"
-        app:startIconContentDescription="Email">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/txtEmailC"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress" />
-
-    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Crie sua senha"
         app:endIconDrawable="@drawable/senha"
-        app:endIcon Mode="clear_text"
+        app:endIconMode="clear_text"
         app:startIconContentDescription="senha">
 
         <com.google.android.material.textfield.TextInputEditText
