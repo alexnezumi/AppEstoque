@@ -5,8 +5,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="15dp"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    android:background="@color/white">
 
     <ImageView
         android:layout_width="200dp"
@@ -15,13 +17,14 @@
         android:layout_marginTop="30dp"
         android:layout_marginBottom="30dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/logib" />
+        android:src="@drawable/logo" />
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
-        android:hint="Insira o seu email"
+        android:hint="Insira o seu email ou usuário"
         app:endIconDrawable="@drawable/email"
         app:endIconMode="clear_text"
         app:startIconContentDescription="Email">
@@ -36,11 +39,12 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
+        Mode="clear_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Insira sua senha"
+        app:endIcon
         app:endIconDrawable="@drawable/senha"
-        app:endIconMode="clear_text"
         app:startIconContentDescription="senha">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -52,17 +56,60 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/BTNentrar"
+    <!-- <com.google.android.material.button.MaterialButton
+     android:id="@+id/BTNentrar"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="Entrar"
+     android:textColor="@color/black"
+     android:backgroundTint="#c5d1d4"
+     app:cornerRadius="0dp">
+
+ </com.google.android.material.button.MaterialButton> -->
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Entrar"
-        android:textColor="@color/black"
-        android:backgroundTint="#c5d1d4"
-        app:cornerRadius="0dp">
+        android:layout_marginTop="15sp"
+        android:orientation="horizontal">
 
-    </com.google.android.material.button.MaterialButton>
+        <Button
+            android:id="@+id/Entrar"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15sp"
+            android:layout_weight="1"
+            android:backgroundTint="#c5d1d4"
+            android:text="Entrar"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/Esqueceu_senha"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15sp"
+            android:layout_weight="1"
+            android:backgroundTint="#c5d1d4"
+            android:text="Esqueceu sua senha ?"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="178dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="85sp"
+        android:backgroundTint="@color/white"
+        android:text="Não tem cadastro? Criar cadastro?"
+        android:textColor="@color/black"
+        />
 
 
 </LinearLayout>
-
