@@ -11,13 +11,14 @@
     android:background="@color/white">
 
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/logo" />
+        android:src="@drawable/logoflo" />
 
 
     <com.google.android.material.textfield.TextInputLayout
@@ -43,7 +44,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Insira sua senha"
-        app:endIcon
         app:endIconDrawable="@drawable/senha"
         app:startIconContentDescription="senha">
 
@@ -56,16 +56,6 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- <com.google.android.material.button.MaterialButton
-     android:id="@+id/BTNentrar"
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
-     android:text="Entrar"
-     android:textColor="@color/black"
-     android:backgroundTint="#c5d1d4"
-     app:cornerRadius="0dp">
-
- </com.google.android.material.button.MaterialButton> -->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -103,7 +93,7 @@
 
     <Button
         android:layout_width="300dp"
-        android:layout_height="178dp"
+        android:layout_height="250dp"
         android:layout_gravity="center_horizontal"
         android:layout_margin="85sp"
         android:backgroundTint="@color/white"
